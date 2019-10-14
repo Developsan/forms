@@ -203,3 +203,7 @@ table thead {
   box-sizing: border-box;
   border-radius: 9px;
 }
+
+.btn-primary{
+  background-color: #4194E1 !important;
+}

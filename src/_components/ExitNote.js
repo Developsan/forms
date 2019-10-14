@@ -45,8 +45,8 @@ export class ExitNote extends Component {
             </Dropdown>
           </div>
 
-          <div className="ml-3">
-            <button className="btn btn-primary">Generar PDF</button>
+          <div className="ml-3 ">
+            <button className="btn btn-primary btn-color">Generar PDF</button>
           </div>
         </div>
 
@@ -84,7 +84,7 @@ export class ExitNote extends Component {
         <div className="row form-main justify-content-center">
           <div className="provider col-md-6  flex-wrap">
             <form>
-              <h6 className="title-pro">Detalles</h6>
+              <h6 className="title-pro">Lista de embarque</h6>
 
               <div className=" justify-content-between">
                 <div className="form-group ">
@@ -115,7 +115,7 @@ export class ExitNote extends Component {
 
               <div className="  justify-content-between text-left inputData">
                 <div className="form-group">
-                  <label for="name"># Ticket Bascula</label>
+                  <label for="name">Caja</label>
                   <input
                     className="form-control w-form"
                     type="text"
@@ -124,27 +124,37 @@ export class ExitNote extends Component {
                 </div>
 
                 <div className="form-group">
-                  <label for="fac">Peso bruto</label>
+                  <label for="fac">Sellos</label>
                   <input className="form-control w-form" type="text" id="fac" />
                 </div>
               </div>
 
-              <div className="d-flex flex-wrap justify-content-between">
-                <div className="form-group wInput">
-                  <label for="origen">Origen</label>
+              <div className=" row ">
+                <div className="form-group col-md-6 wInput">
+                  <label for="origen">Destino</label>
                   <input
                     className="form-control w-form"
                     type="text"
                     id="origen"
                   />
                 </div>
-                <div className="form-group wInput">
-                  <label for="sellos">Sellos</label>
-                  <input
-                    className="form-control w-form"
-                    type="text"
-                    id="sellos"
-                  />
+                <div className="col-md-6">
+                  <label>Unit</label>
+                  <Dropdown className="">
+                    <Dropdown.Toggle
+                      variant="success"
+                      id="dropdown-basic"
+                      className="btn-drop"
+                    >
+                      Kg
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">Kg</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">Lb</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">Ton</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
                 </div>
               </div>
             </form>

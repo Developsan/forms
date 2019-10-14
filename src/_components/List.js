@@ -80,7 +80,7 @@ export class List extends Component {
         <div className="row form-main justify-content-center">
           <div className="provider col-md-6  flex-wrap">
             <form>
-              <h6 className="title-pro">Detalles</h6>
+              <h6 className="title-pro">Details</h6>
 
               <div className=" justify-content-between">
                 <div className="form-group ">
@@ -107,7 +107,7 @@ export class List extends Component {
 
           <div className="provider col-md-6 ">
             <form>
-              <h6 className="title-pro">Datos</h6>
+              <h6 className="title-pro-2">Datos</h6>
 
               <div className="  justify-content-between text-left inputData">
                 <div className="form-group">
