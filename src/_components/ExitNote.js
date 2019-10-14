@@ -82,7 +82,7 @@ export class ExitNote extends Component {
         {/* <---------------- SECCIÓN FORMULARIO -------------------> */}
 
         <div className="row form-main justify-content-center">
-          <div className="provider col-md-5  flex-wrap">
+          <div className="provider col-md-6  flex-wrap">
             <form>
               <h6 className="title-pro">Detalles</h6>
 
@@ -109,9 +109,9 @@ export class ExitNote extends Component {
             </form>
           </div>
 
-          <div className="provider col-md-5 d-flex ">
+          <div className="provider col-md-6 ">
             <form>
-              <h6 className="title-pro">Datos</h6>
+              <h6 className="title-pro-2 ">Datos</h6>
 
               <div className="  justify-content-between text-left inputData">
                 <div className="form-group">
@@ -130,7 +130,7 @@ export class ExitNote extends Component {
               </div>
 
               <div className="d-flex flex-wrap justify-content-between">
-                <div className="form-group w-50">
+                <div className="form-group wInput">
                   <label for="origen">Origen</label>
                   <input
                     className="form-control w-form"
@@ -138,7 +138,7 @@ export class ExitNote extends Component {
                     id="origen"
                   />
                 </div>
-                <div className="form-group">
+                <div className="form-group wInput">
                   <label for="sellos">Sellos</label>
                   <input
                     className="form-control w-form"
@@ -191,7 +191,7 @@ export class ExitNote extends Component {
 
         {/* <---------------- SECCIÓN FORMULARIO -------------------> */}
 
-        <div className="row mt-5">
+        <div className="row mt-6">
           <div class="col-md-6">
             <div className="form-group">
               <label for="">Comentarios</label>
@@ -250,14 +250,14 @@ export class ExitNote extends Component {
 
         {/* <----------------  FIN FORMULARIO -------------------> */}
 
-        <div className="line m-5"></div>
-
-        <div className="signature d-flex  align-items-center">
-          <span className="p-4">Firma</span>
+        <div className="line m-2"></div>
+        <div className="text-right">
+          <button className="btn btn-primary">Generar PDF</button>
         </div>
 
-        <div className="text-center pf">
-          <p>Agregar firma en pdf</p>
+        <div className="signature d-flex  align-items-center flex-column justify-content-center">
+          <input className=" w-50" />
+          Firma
         </div>
       </div> // end container
     );

@@ -85,7 +85,7 @@ class EntryNote extends Component {
             <form>
               <h6 className="title-pro">Proveedor</h6>
 
-              <div className="d-flex flex-wrap justify-content-between">
+              <div className="d-flex row  ">
                 <div className="form-group w-50">
                   <label for="name">Proveedor</label>
                   <input
@@ -95,13 +95,13 @@ class EntryNote extends Component {
                   />
                 </div>
 
-                <div className="form-group input-w">
+                <div className="form-group col-md-6 input-w">
                   <label for="fac">Factura</label>
                   <input className="form-control w-form" type="text" id="fac" />
                 </div>
 
                 <div className="form-group w-50">
-                  <label for="placas">Placas</label>
+                  <label for="placas">Chofer</label>
                   <input
                     className="form-control w-form"
                     type="text"
@@ -109,7 +109,7 @@ class EntryNote extends Component {
                   />
                 </div>
 
-                <div className="form-group input-w">
+                <div className="form-group col-md-6 input-w">
                   <label for="trans">Transporte</label>
                   <input
                     className="form-control w-form"
@@ -119,7 +119,7 @@ class EntryNote extends Component {
                 </div>
 
                 <div className="form-group w-50">
-                  <label for="chofer">Chofer</label>
+                  <label for="chofer">Placas</label>
                   <input
                     className="form-control w-form"
                     type="text"
@@ -134,8 +134,8 @@ class EntryNote extends Component {
             <form>
               <h6 className="title-pro">Datos</h6>
 
-              <div className="d-flex  justify-content-between text-left inputData">
-                <div className="form-group">
+              <div className="  row  text-left inputData">
+                <div className="form-group col-md-3">
                   <label for="name"># Ticket Bascula</label>
                   <input
                     className="form-control w-form"
@@ -144,12 +144,12 @@ class EntryNote extends Component {
                   />
                 </div>
 
-                <div className="form-group">
+                <div className="form-group col-md-3">
                   <label for="fac">Peso bruto</label>
                   <input className="form-control w-form" type="text" id="fac" />
                 </div>
 
-                <div className="form-group">
+                <div className="form-group col-md-3">
                   <label for="placas">Tara</label>
                   <input
                     className="form-control w-form"
@@ -158,7 +158,7 @@ class EntryNote extends Component {
                   />
                 </div>
 
-                <div className="form-group">
+                <div className="form-group col-md-3">
                   <label for="trans">Peso Neto</label>
                   <input
                     className="form-control w-form"
@@ -168,8 +168,8 @@ class EntryNote extends Component {
                 </div>
               </div>
 
-              <div className="d-flex flex-wrap justify-content-between">
-                <div className="form-group w-50">
+              <div className="row">
+                <div className="form-group col-md-6">
                   <label for="origen">Origen</label>
                   <input
                     className="form-control w-form"
@@ -177,7 +177,7 @@ class EntryNote extends Component {
                     id="origen"
                   />
                 </div>
-                <div className="form-group">
+                <div className="form-group col-md-6">
                   <label for="sellos">Sellos</label>
                   <input
                     className="form-control w-form"
@@ -185,7 +185,7 @@ class EntryNote extends Component {
                     id="sellos"
                   />
                 </div>
-                <div>
+                <div className="col-md-6">
                   <label>Unit</label>
                   <Dropdown className="">
                     <Dropdown.Toggle
@@ -322,13 +322,13 @@ class EntryNote extends Component {
         {/* <---------------- FIN FORMULARIO -------------------> */}
 
         <div className="line m-2"></div>
-
-        <div className="signature d-flex  align-items-center">
-          <span className="p-4">Firma</span>
+        <div className="text-right">
+          <button className="btn btn-primary">Generar PDF</button>
         </div>
 
-        <div className="text-center pf">
-          <p>Agregar firma en pdf</p>
+        <div className="signature d-flex  align-items-center flex-column justify-content-center">
+          <input className=" w-50" />
+          Firma
         </div>
       </div> // end container
     );

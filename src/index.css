@@ -44,8 +44,9 @@ body {
 .btn-success {
   color: #000 !important;
   background-color: #fff !important;
-
-  border: 1px solid #e5e9ed !important;
+  width: 100%;
+  text-align: left !important;
+  border: 1px solid #ced4da !important;
 }
 
 .btn-success:hover {
@@ -65,7 +66,7 @@ body {
 .p-1 {
   font-style: normal;
   font-size: 15px;
-  line-height: 16px;
+  line-height: 21.5px;
   width: 60%;
   margin: 0 auto;
 }
@@ -85,14 +86,17 @@ body {
 }
 .title-pro {
   margin-bottom: 40px;
+ 
+}
+
+.title-pro-2{
+  visibility: hidden;
+  margin-bottom: 40px;
 }
 
 label {
   opacity: 0.6;
-}
-
-.inputData div {
-  margin-left: 10px;
+  font-size: 12px;
 }
 
 .table-color {
@@ -120,13 +124,13 @@ th {
   height: 350px;
 }
 
-.signature span {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  border-top: 1px solid #3b4b5a;
+.signature input {
+ border:none;
+  border-bottom: 1px solid #3b4b5a;
   opacity: 0.6;
   font-size: 1.3em;
+  outline: none;
+  margin-bottom: 20px;
 }
 
 .pf {
@@ -135,7 +139,7 @@ th {
 }
 
 .input-w {
-  margin-right: 65px;
+ 
 }
 
 .td-inputs tr td input {
@@ -177,4 +181,25 @@ td {
 
 .div-foot-f p:nth-child(7) {
   visibility: hidden;
+}
+.wInput {
+  width: 49% !important;
+}
+
+table thead {
+  background-color: #f4f8fa;
+}
+
+#btn-add {
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 8px;
+}
+#btn-add:hover {
+  border: 1px solid #4194e1;
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  border-radius: 9px;
 }

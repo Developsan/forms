@@ -4,17 +4,15 @@ import { Dropdown } from "react-bootstrap";
 import $ from "jquery";
 
 export class List extends Component {
-
-componentDidMount(){
-    $(document).ready(function(){
-        $("#btn-add").click(function() {
-            $("tbody").append(
-              '<tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text"</td><td><input type="text"</td><td><input type="text"</td><td><input type="text"</td></tr>'
-            );
-          });
-    })
-}
-
+  componentDidMount() {
+    $(document).ready(function() {
+      $("#btn-add").click(function() {
+        $("tbody").append(
+          '<tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text"</td><td><input type="text"</td><td><input type="text"</td><td><input type="text"</td></tr>'
+        );
+      });
+    });
+  }
 
   render() {
     return (
@@ -49,8 +47,7 @@ componentDidMount(){
 
         <div className="line m-5"></div>
 
-            {/*  Sección de header */}
-
+        {/*  Sección de header */}
 
         <div className="row d-flex justify-content-between">
           <div className="col-md-4 text-1 d-flex align-items-center">
@@ -78,30 +75,26 @@ componentDidMount(){
 
         <div className="line m-5"></div>
 
-
         {/* <---------------- SECCIÓN FORMULARIO -------------------> */}
 
-
-
-
         <div className="row form-main justify-content-center">
-          <div className="provider col-md-5  flex-wrap">
+          <div className="provider col-md-6  flex-wrap">
             <form>
               <h6 className="title-pro">Detalles</h6>
 
               <div className=" justify-content-between">
                 <div className="form-group ">
-                  <label for="name">Cliente</label>
+                  <label for="name">Cliet</label>
                   <input className="form-control" type="text" id="name" />
                 </div>
 
                 <div className="form-group ">
-                  <label for="placas">Dirección</label>
+                  <label for="placas">Adress</label>
                   <input className="form-control" type="text" id="placas" />
                 </div>
 
                 <div className="form-group ">
-                  <label for="chofer">Orden de compra cliente</label>
+                  <label for="chofer">Customer Purchase Order</label>
                   <input
                     className="form-control w-form"
                     type="text"
@@ -112,13 +105,13 @@ componentDidMount(){
             </form>
           </div>
 
-          <div className="provider col-md-5 ">
+          <div className="provider col-md-6 ">
             <form>
               <h6 className="title-pro">Datos</h6>
 
               <div className="  justify-content-between text-left inputData">
                 <div className="form-group">
-                  <label for="name"># Ticket Bascula</label>
+                  <label for="name">Trailer</label>
                   <input
                     className="form-control w-form"
                     type="text"
@@ -127,13 +120,21 @@ componentDidMount(){
                 </div>
 
                 <div className="form-group">
-                  <label for="fac">Peso bruto</label>
+                  <label for="fac">Seals</label>
                   <input className="form-control w-form" type="text" id="fac" />
                 </div>
               </div>
 
-              <div className="d-flex">
-                <div className="form-group">
+              <div className="d-flex flex-wrap row justify-content-between">
+                <div className="form-group col-md-6 wInput">
+                  <label for="origen">Destination</label>
+                  <input
+                    className="form-control w-form"
+                    type="text"
+                    id="origen"
+                  />
+                </div>
+                <div className="col-md-6">
                   <label>Unit</label>
                   <Dropdown className="">
                     <Dropdown.Toggle
@@ -151,14 +152,6 @@ componentDidMount(){
                     </Dropdown.Menu>
                   </Dropdown>
                 </div>
-                <div className="form-group ml-1">
-                  <label for="sellos">Sellos</label>
-                  <input
-                    className="form-control w-form"
-                    type="text"
-                    id="sellos"
-                  />
-                </div>
               </div>
             </form>
           </div>
@@ -166,12 +159,9 @@ componentDidMount(){
 
         {/* <---------------- FIN FORMULARIO -------------------> */}
 
-
         <div className="line m-5"></div>
 
-                {/* <---------------- SECCIÓN TABLA-------------------> */}
-
-
+        {/* <---------------- SECCIÓN TABLA-------------------> */}
 
         <div class="">
           <table className="table responsive table-bordered text-center">
@@ -195,7 +185,7 @@ componentDidMount(){
             </p>
             <p className=""></p>
             <p className=""></p>
-            
+
             <p className="">000.00</p>
             <p className="">000.00</p>
             <p className="">000.00</p>
@@ -208,7 +198,6 @@ componentDidMount(){
 
         {/* <---------------- SECCIÓN FORMULARIO -------------------> */}
 
-
         <div className="row mt-5">
           <div class="col-md-6">
             <div className="form-group">
@@ -220,28 +209,28 @@ componentDidMount(){
           <div className="col-md-6 d-flex justify-content-center">
             <div className="col-md-6">
               <div className="form-group mb-5">
-                <label for="recibe">Recibe</label>
+                <label for="recibe">Dispatch by</label>
                 <input className="form-control" type="text" id="recibe" />
               </div>
 
               <div className="inputCheck">
                 <label className="checkbox-inline">
                   <input type="checkbox" className="mr-3" />
-                  Revision Niton
+                  Nition Inspection
                 </label>
               </div>
 
               <div className="inputCheck">
                 <label className="checkbox-inline">
                   <input type="checkbox" className="mr-3" />
-                  Revisión Radación
+                  Radiation Inspection
                 </label>
               </div>
             </div>
 
             <div className="col-md-6 form-bt">
               <div className="form-group">
-                <label for="recibe">Descarga</label>
+                <label for="recibe">Loaded by</label>
                 <input
                   className="form-control"
                   type="text"
@@ -250,7 +239,7 @@ componentDidMount(){
                 />
               </div>
               <div className="form-group">
-                <label for="recibe">Realizo</label>
+                <label for="recibe">Done by</label>
                 <input
                   className="form-control"
                   type="text"
@@ -259,29 +248,22 @@ componentDidMount(){
                 />
               </div>
               <div className="form-group">
-                <label for="recibe">Realizo</label>
+                <label for="recibe">Done by</label>
                 <input className="form-control" type="text" id="" />
               </div>
             </div>
           </div>
         </div>
 
-
-
         {/* <---------------- FIN FORMULARIO -------------------> */}
 
-
-
-
-
         <div className="line m-2"></div>
-
-        <div className="signature d-flex  align-items-center">
-          <span className="p-4">Firma</span>
+        <div className="text-right">
+          <button className="btn btn-primary">Generar PDF</button>
         </div>
-
-        <div className="text-center pf">
-          <p>Agregar firma en pdf</p>
+        <div className="signature d-flex  align-items-center flex-column justify-content-center">
+          <input className=" w-50" />
+          Firma
         </div>
       </div> // end container
     );
