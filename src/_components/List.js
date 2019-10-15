@@ -60,7 +60,7 @@ export class List extends Component {
             </p>
           </div>
           <div className="col-md-4 d-flex justify-content-center">
-            <img src={logo}></img>
+            <img src={logo} alt="logo"></img>
           </div>
           <div className="col-md-2 d-flex flex-column align-items-end color-r">
             <span className="t-min">Fecha</span>
@@ -262,7 +262,7 @@ export class List extends Component {
           <button className="btn btn-primary">Generar PDF</button>
         </div>
         <div className="signature d-flex  align-items-center flex-column justify-content-center">
-          <input className=" w-50" />
+          <input className=" w-50 text-center" />
           Firma
         </div>
       </div> // end container
